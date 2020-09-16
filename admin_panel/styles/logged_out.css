@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+  background: #f3f5f9;
+}
+
+.login-box {
+  width: 17rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-dark);
+}
+
+.login-box img {
+  float: top;
+  width: 100%;
+  opacity: 70%;
+}
+
+.login-box h2 {
+  float: left;
+  font-size: 2.5rem;
+  border-bottom: 0.4rem solid var(--color-accent);
+  margin-bottom: 2rem;
+  padding: 0.6rem 0;
+}
+
+.textbox {
+  width: 100%;
+  overflow: hidden;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  margin: 1rem 0;
+  border-bottom: 0.1rem solid #fd5335;
+}
+
+.textbox i {
+  width: 1.5rem;
+  float: left;
+  text-align: center;
+}
+
+.textbox input {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1rem;
+  width: 80%;
+  float: left;
+  margin: 0 0.5rem;
+}
+
+.btn {
+  width: 100%;
+  background: none;
+  border: 0.2rem solid #fd5335;
+  color: #595959;
+  padding: 0.6rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #fd5335;
+  color: #ffffff;
+  transition: linear 0.3s;
+}
+
+.error-message {
+  text-align: center;
+  color: #fd5335;
+  padding: 0.5rem;
+}

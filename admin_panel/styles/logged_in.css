@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+
+:root {
+  --color-accent: #fc2803;
+  --color-dark: #636363;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  background: #f3f5f9;
+}
+
+.wrapper {
+  display: flex;
+  position: relative;
+}
+
+.wrapper .sidebar {
+  position: fixed;
+  width: 13rem;
+  height: 100%;
+  background: var(--color-dark);
+  padding: 1rem 0;
+}
+
+.wrapper .sidebar img {
+  width: 100%;
+  padding: 1rem;
+  opacity: 70%;
+}
+
+.wrapper .sidebar h2 {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.wrapper .sidebar ul li {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 1px solid rgba(225, 225, 225, 0.05);
+}
+
+.wrapper .sidebar ul li a {
+  color: #ffffff;
+  display: block;
+}
+
+.wrapper .sidebar ul li a .fas {
+  width: 2rem;
+}
+
+.wrapper .sidebar ul li:hover {
+  background: var(--color-accent);
+  transition: linear 0.3s;
+}
+
+.wrapper .sidebar .help {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  margin-top: 1rem;
+}
+
+.wrapper .sidebar .help a {
+  display: block;
+  color: #ffffff;
+}
+
+.wrapper .main_content {
+  width: 100%;
+  margin-left: 13rem;
+}
+
+.wrapper .main_content .header {
+  padding: 1rem;
+  background: var(--color-accent);
+  color: #ffffff;
+  border-bottom: 0.2rem solid #e0e4e8;
+  text-align: center;
+}
+
+.wrapper .main_content .info {
+  margin: 1rem;
+  color: var(--color-dark);
+  line-height: 1rem;
+  text-align: center;
+}
+
+.wrapper .main_content .info .logo {
+  margin-top: 15%;
+  width: 40%;
+  opacity: 20%;
+}
+
+.login-box {
+  width: 17rem;
+  color: var(--color-dark);
+  margin: auto;
+  margin-top: 15%;
+}
+
+.login-box h2 {
+  float: left;
+  font-size: 2.5rem;
+  border-bottom: 0.4rem solid var(--color-accent);
+  margin-bottom: 2rem;
+  padding: 0.6rem 0;
+}
+
+.textbox {
+  width: 100%;
+  overflow: hidden;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  margin: 1rem 0;
+  border-bottom: 0.1rem solid var(--color-accent);
+}
+
+.textbox i {
+  width: 1.5rem;
+  float: left;
+  text-align: center;
+}
+
+.textbox input {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1rem;
+  width: 80%;
+  float: left;
+  margin: 0 0.5rem;
+}
+
+.btn {
+  width: 100%;
+  background: none;
+  border: 0.2rem solid var(--color-accent);
+  color: var(--color-dark);
+  padding: 0.6rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--color-accent);
+  color: #ffffff;
+  transition: linear 0.3s;
+}
+
+.error-message {
+  text-align: center;
+  color: var(--color-accent);
+  padding: 0.5rem;
+}
+
+.sample-box {
+  color: var(--color-dark);
+  line-height: 2rem;
+  padding: 1rem;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sample-box h2 {
+  font-size: 2rem;
+  border-bottom: 0.2rem solid var(--color-accent);
+  margin-bottom: 2rem;
+  padding: 0.6rem 0;
+}
+
+.sample-box h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0;
+}
+
+.sample-box form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.sample-box form div {
+  margin: 0;
+}
+
+.sample-box form .sample-textbox {
+  margin: 5;
+}
+
+.sample-box i {
+  width: 1.5rem;
+  float: left;
+  text-align: center;
+}
+
+.sample-box form input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #ffffff;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  width: 70%;
+  float: left;
+  margin: 0 0.5rem;
+}
